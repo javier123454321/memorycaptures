@@ -3,3 +3,17 @@
   height:auto;
   margin:auto;
 }
+
+@media only screen and (max-device-width:1024px){
+  h3{
+    font-size: 24px;
+  }
+
+  div.landing{
+    height: 100vh;
+    overflow: visible;
+    margin: auto;
+    margin-top: 15vh;
+    max-width: 95vw;
+    min-width: 85%;
+  }
