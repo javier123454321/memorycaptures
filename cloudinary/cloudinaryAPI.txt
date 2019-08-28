@@ -1,0 +1,4 @@
+Cloud name:	memorycaptures-com
+API Key:619714799512953
+API Secret:LPSbZy5-ePtwpVj-gCwXpaw9fR0
+Environment variable:CLOUDINARY_URL=cloudinary:CLOUDINARY_URL=cloudinary://619714799512953:LPSbZy5-ePtwpVj-gCwXpaw9fR0@memorycaptures-com
