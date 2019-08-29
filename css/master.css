@@ -19,6 +19,7 @@ html{
 .infosection{
   background-color: white;
   padding-top: 35px;
+  min-height: 800px;
   height: 85vh;
 }
 
@@ -64,12 +65,6 @@ h2{
 
 .showPic{
   display: none;
-}
-
-.aboutsection{
-  font-size: 28px;
-  text-align: left;
-  margin-left: 50px;
 }
 
 #homenav {
@@ -243,17 +238,7 @@ hr {
     max-width: 95vw;
     min-width: 85%;
   }
-  div.info{
-    background-color: #f7f7f7;
-    font-size: 14px;
-    padding: 50px;
-    display: none;
-    width: 70%;
-    max-width: 500px;
-    min width 70%-50px;
-    text-align: justify;
-    margin: auto;
-  }
+
   div.info{
     width: 90vw;
     padding: 10px;
