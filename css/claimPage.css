@@ -1,3 +1,7 @@
+html{
+  height:100vh;
+}
+
 .previewImg{
   width:300px;
   height:auto;
@@ -57,12 +61,23 @@ div.showPic{
   h3{
     font-size: 24px;
   }
-
+  div.showPic{
+    box-sizing: border-box;
+  }
   div.claimLanding{
-    height: 100vh;
-    overflow: visible;
+    min-width: 0px;
+    box-sizing:border-box;
+    width: 350px;
+    padding: 10px;
+    height: 250px;
+    overflow: show;
     margin: auto;
-    margin-top: 15vh;
-    max-width: 95vw;
-    min-width: 85%;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+  }
+
+  .previewImg{
+    width:250px;
+    height:auto;
+    margin:auto;
   }
