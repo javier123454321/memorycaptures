@@ -5,6 +5,7 @@
 let submitButton = document.getElementsByClassName("subButton")[0];
 let pictureID = document.getElementById("picID").value;
 let imgPath = "images/downloadables/IMG_" + pictureID + ".jpg";
+let height1 = document.getElementsByClassName("claimLanding")[0].offsetHeight;
 
 
 function getPicture(){
@@ -24,7 +25,6 @@ function getPicture(){
 
     document.getElementsByClassName("showPic")[0].style.display = "block";
 
-    let height1 = document.getElementsByClassName("claimLanding")[0].offsetHeight;
-    let height2 = document.getElementsByClassName("previewImg")[0].offsetHeight;
-    document.getElementsByClassName('claimLanding')[0].style.height = (height1 + height2 + 180) + 'px';
+    let height2 = (document.getElementsByClassName("previewImg")[0].offsetHeight +190);
+    document.getElementsByClassName('claimLanding')[0].style.height = (height1 + height2) + 'px';
     }
