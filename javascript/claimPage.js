@@ -21,4 +21,7 @@ function getPicture(){
         console.log("new src = " + document.getElementsByClassName("previewImg")[0].src);
       }
     document.getElementsByClassName("showPic")[0].style.display = "block";
+    let height1 = document.getElementsByClassName("landing")[0].offsetHeight;
+    let height2 = document.getElementsByClassName("previewImg")[0].offsetHeight;
+    document.getElementsByClassName('landing')[0].style.height = (height1 + height2 + 180) + 'px';
     }

@@ -22,7 +22,7 @@ img.landingimage{
 }
 
 div.landing{
-  background-color: #e4e2e2;
+  background-color: #e1e1e1;
   padding: 40px;
   display: block;
   max-width: 60%;
@@ -35,6 +35,16 @@ div.landing{
   border-radius: 80px;
   border: solid 10px;
   border-color: #0abab5;
+}
+
+div.showPic{
+  background-color: white;
+  padding: 25px;
+  max-width: 350px;
+  margin: auto;
+  border-radius: 30px;
+  border: solid #0abab5;
+  border-width: thick;
 }
 
 .footer{
