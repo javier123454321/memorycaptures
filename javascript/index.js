@@ -1,7 +1,6 @@
 
 //Make a collapsible button that hides or displays a section of text when clicked
 function hideContent(collapsible, content){
-  console.log("hiding: " + collapsible.innerHTML)
   content.style.display = "none";
   collapsible.classList.remove("collapsibleshow");
   collapsible.classList.add("collapsible");
@@ -18,9 +17,19 @@ function showContent(collapsible, content){
   collapsible.classList.add("collapsibleshow");
 }
 
+function makeInfoSectionNormal(basePageSize){
+  document.getElementsByClassName('infosection')[0].style.height = basePageSize + 'px';
+}
+
+function addInfoSectionSize(basePageSize, addition){
+  document.getElementsByClassName('infosection')[0].style.height = (basePageSize + addition) + 'px';
+}
+
 let coll = document.getElementsByClassName("collapsible");
 let i;
 let length = coll.length
+let infoSectionHeight = document.getElementsByClassName('infosection')[0].offsetHeight;
+
 
   for (i = 0; i < length; i++) {
 
@@ -31,9 +40,12 @@ let length = coll.length
 
       if (content.style.display === "block") {
         hideContent(this, content);
+        makeInfoSectionNormal(infoSectionHeight)
       } else {
         hideAllContent(document.getElementsByClassName("collapsibleshow"))
+        makeInfoSectionNormal(infoSectionHeight)
         showContent(this, content);
+        addInfoSectionSize(infoSectionHeight, content.offsetHeight)
       }
     });
   }
