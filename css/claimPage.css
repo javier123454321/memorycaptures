@@ -24,6 +24,7 @@ img.landingimage{
 div.claimLanding{
   background-color: #e1e1e1;
   padding: 40px;
+  padding-bottom: 0px;
   display: block;
   max-width: 800px;
   min-width: 400px;
