@@ -24,7 +24,7 @@ function getPicture(){
 
     document.getElementsByClassName("showPic")[0].style.display = "block";
 
-    let height1 = document.getElementsByClassName("landing")[0].offsetHeight;
+    let height1 = document.getElementsByClassName("claimLanding")[0].offsetHeight;
     let height2 = document.getElementsByClassName("previewImg")[0].offsetHeight;
-    document.getElementsByClassName('landing')[0].style.height = (height1 + height2 + 180) + 'px';
+    document.getElementsByClassName('claimLanding')[0].style.height = (height1 + height2 + 180) + 'px';
     }
