@@ -9,6 +9,9 @@ let height1 = document.getElementsByClassName("claimLanding")[0].offsetHeight;
 
 
 function getPicture(){
+    //to test, input element 3988, it is the only picture on the server.
+    //Otherwise, if you dont, it defaults to a picture of a flower, which is not what we want
+    
     let pictureID = document.getElementById("picID").value;
     let imgPath = "/images/downloadables/IMG_" + pictureID + ".jpg";
 
