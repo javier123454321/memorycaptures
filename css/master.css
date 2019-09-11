@@ -1,7 +1,6 @@
 
 
 p{
-  font-family:American Typewriter, courier;
 }
 
 html{
@@ -56,11 +55,17 @@ img.landingimage{
 
 h1{
   font-size: 36px;
-  font-family: American Typewriter, courier;
+  font-family: itc-american-typewriter, serif;
 }
 
 h2{
+  @extend h1;
   font-size: 28px;
+}
+
+h3{
+  @extend h1;
+  font-size: 26px;
 }
 
 .showPic{
@@ -259,10 +264,12 @@ hr {
 
   #homenav {
     width: 150px;
-    font-size: 18pt;
+    font-size: 14pt;
   }
 
   #homenav:hover {
-    font-size: 22pt;
+    font-size: 14pt;
   }
+
+
 }

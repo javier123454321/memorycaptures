@@ -1,17 +1,10 @@
 //Script finds the image based on pitcure ID and displays it along with a download button in the claimPage
     // Script by: Javier Gonzalez javier.e.glz@gmail.com
 
-
-let submitButton = document.getElementsByClassName("subButton")[0];
-let pictureID = document.getElementById("picID").value;
-let imgPath = "images/downloadables/IMG_" + pictureID + ".jpg";
-let height1 = document.getElementsByClassName("claimLanding")[0].offsetHeight;
-
-
 function getPicture(){
     //to test, input element 3988, it is the only picture on the server.
     //Otherwise, if you dont, it defaults to a picture of a flower, which is not what we want
-    
+
     let pictureID = document.getElementById("picID").value;
     let imgPath = "/images/downloadables/IMG_" + pictureID + ".jpg";
 
@@ -27,7 +20,7 @@ function getPicture(){
       }
 
     document.getElementsByClassName("showPic")[0].style.display = "block";
-
-    let height2 = (document.getElementsByClassName("previewImg")[0].offsetHeight +350);
-    document.getElementsByClassName('claimLanding')[0].style.height = (height1 + height2) + 'px';
+    // let height1 = document.getElementsByClassName("claimLanding")[0].offsetHeight;
+    // let height2 = (document.getElementsByClassName("previewImg")[0].offsetHeight +350);
+    // document.getElementsByClassName('claimLanding')[0].style.height = (height1 + height2) + 'px';
     }
