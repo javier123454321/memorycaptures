@@ -64,7 +64,7 @@ div.showPic{
 .modal-content{
   max-width: 800px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 10vh;
   border-radius: 30px;
   border: solid #0abab5 5px;
   padding-bottom: 30px;
