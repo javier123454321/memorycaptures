@@ -39,23 +39,17 @@ div.claimLanding{
   min-width: 400px;
   text-align: center;
   margin: auto;
-  margin-top: 250px;
-  margin-bottom: 100px;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-70%);
   border-radius: 80px;
   border: solid 10px;
   border-color: #0abab5;
 }
 
 div.showPic{
-  /* background-color: white; */
-  /* padding: 25px; */
-  /* max-width: 350px; */
-  /* margin: auto;
-  margin-bottom: 40px; */
-  /* border-radius: 30px; */
-  /* border: solid #0abab5;
-  border-width: thick; */
-}
+  }
+
 
 .footer{
   position:fixed;
@@ -63,12 +57,39 @@ div.showPic{
 
 .modal-content{
   max-width: 800px;
-  margin: auto;
-  margin-top: 10vh;
+  /* margin: auto; */
+  position: relative;
+  top: 50vh;
+  transform: translateY(-65%);
   border-radius: 30px;
   border: solid #0abab5 5px;
   padding-bottom: 30px;
 }
+
+#claimPhotoModal{
+  display: block;
+  margin: auto;
+}
+
+#reportIssueModal{
+  display: none;
+  margin: auto;
+}
+.reportIssue{
+  /* display: none; */
+  /* opacity: 0; */
+  text-align: center;
+  margin: auto;
+}
+
+#issueComment{
+  height: 100px;
+  width: 500px;
+}
+#issueSubject{
+  width: 500px;
+}
+
 @media only screen and (max-device-width:1024px){
   h3{
     font-size: 24px;

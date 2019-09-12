@@ -72,7 +72,7 @@ h3{
   display: none;
 }
 
-#homenav {
+a.buttonStyle {
   -webkit-transition: all 1s ease;
   box-sizing: content-box;
   width: 100px;
@@ -81,14 +81,13 @@ h3{
   text-decoration: none;
   border: solid 3px;
   padding: 8px;
-  margin: 5px;
+  margin: 15px;
   border-radius: 10px;
   opacity: .6;
   font-size: 12pt;
-
 }
 
-#homenav:hover {
+.buttonStyle:hover {
   color: white;
   background-color: #0abab5;
   text-decoration: none;

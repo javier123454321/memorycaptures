@@ -15,9 +15,9 @@
 
   </head>
   <body>
-
+    <img class="landingimage" src="/images/landing-bg2.jpg">
     <div class="claimLanding">
-      <img class="landingimage" src="/images/landing-bg2.jpg">
+
 
       <form onsubmit="getPicture(); return false">
 
@@ -38,20 +38,45 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
 
       <!-- Modal content-->
-      <div class="modal-content">
+      <div class="modal-content" id="claimPhotoModal">
+
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h3 class="modal-title">Found Your Memory!</h3>
         </div>
-        <div class="modal-body">
-          <a id="homenav" href="https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg" download="Captured Memory.jpg" target="_blank">DOWNLOAD LINK</a>
+
+        <div class="modal-body claimPhoto">
+          <a id="downloadLink" class="buttonStyle" href="https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg" download="Captured Memory.jpg" target="_blank">DOWNLOAD LINK</a>
           <br> <br><br>
           <a id="imglink" href="https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg"><img class="previewImg" src = "https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg" alt="Captured Memory" title="View Full Resolution Image"></a>
+
+          <br><br><a class="buttonStyle" id="reportIssueButton"> Not What You Expected?</a>
         </div>
 
       </div>
+      <div class="modal-content" id="reportIssueModal">
 
-    </div>
+        <div class="modal-header">
+          <h4> <b>Let us Know if There is a Problem </b></h4>
+        </div>
+
+        <div class="modal-body reportIssueForm">
+          <form class="reportIssue" action="index.html" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="email" name="mail" placeholder="E-mail" required><br>
+            <br><br>
+
+            Subject:<br>
+            <input id="issueSubject" type="text" name="subject" value="Problem claiming a picture" placeholder="Subject"><br>
+
+            Comment:<br>
+            <textarea id="issueComment"name="message" rows="10" cols="50" required></textarea><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+          </form>
+        </div>
+
+  </div>
   </div>
   <div class="footer">
       <p>Memory Captures, LLC</p>
