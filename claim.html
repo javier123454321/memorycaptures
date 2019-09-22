@@ -51,7 +51,7 @@
           <br> <br><br>
           <a id="imglink" href="https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg"><img class="previewImg" src = "https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg" alt="Captured Memory" title="View Full Resolution Image"></a>
 
-          <br><br><a class="buttonStyle" id="reportIssueButton"> Not What You Expected?</a>
+          <br><br><a class="buttonStyle" id="reportIssueButton"> Need Help Claiming?</a>
         </div>
 
       </div>
@@ -62,13 +62,13 @@
         </div>
 
         <div class="modal-body reportIssueForm">
-          <form class="reportIssue" action="index.html" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Name"><br>
+          <form class="reportIssue" action="contact.php" method="POST" required>
+            <input type="text" name="name" placeholder="Name" required><br>
             <input type="email" name="mail" placeholder="E-mail" required><br>
             <br><br>
 
             Subject:<br>
-            <input id="issueSubject" type="text" name="subject" value="Problem claiming a picture" placeholder="Subject"><br>
+            <input id="issueSubject" type="text" name="subject" value="Help claiming a picture" placeholder="Subject" required><br>
 
             Comment:<br>
             <textarea id="issueComment"name="message" rows="10" cols="50" required></textarea><br><br>

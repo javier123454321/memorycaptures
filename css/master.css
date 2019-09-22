@@ -91,7 +91,7 @@ h3{
 }
 
 .buttonStyle {
-  -webkit-transition: all 1s ease;
+  -webkit-transition: all .5s ease;
   box-sizing: content-box;
   width: 100px;
   color: #0abab5;
@@ -99,7 +99,7 @@ h3{
   text-decoration: none;
   border: solid 3px;
   padding: 8px;
-  margin: 15px;
+  /* margin:15px; */
   border-radius: 10px;
   opacity: .6;
   font-size: 12pt;
@@ -108,13 +108,13 @@ h3{
 .buttonStyle:hover {
   color: white;
   background-color: #0abab5;
-  text-decoration: none;
-  border: solid 3px;
-  padding: 8px;
   margin: 5px;
-  border-radius: 10px;
   opacity: 1;
   font-size: 14pt;
+}
+
+#FindOutMore{
+  position:relative;
 }
 
 #a01 {
