@@ -90,7 +90,7 @@ h3{
   display: none;
 }
 
-a.buttonStyle {
+.buttonStyle {
   -webkit-transition: all 1s ease;
   box-sizing: content-box;
   width: 100px;
