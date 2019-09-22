@@ -1,0 +1,60 @@
+.privateEventInfo, .restaurantInfo{
+  margin: auto;
+  background-color: #E5ED61;
+  opacity:.85;
+  text-align: left;
+  max-width: 90%;
+  width:1000px;
+  min-width: 250px;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+.privateEventInfo{
+  padding-left: 80px;
+}
+.restaurantInfo{
+  padding-right: 80px;
+}
+
+.infoTextEvents, .infoTextRestaurant{
+  padding-bottom:20px;
+  width:800px;
+}
+
+.infoTextEvents{
+  margin-right: 40px;
+}
+
+.infoTextRestaurant{
+  margin-left: 40px;
+}
+
+.quote{
+    border-left: solid 1px;
+    float:right;
+}
+
+.setUp{
+    border-right: solid 1px;
+    float:left;
+}
+.quote, .setUp{
+  border-color: white;
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+  width: 200px;
+}
+
+.quote > h4, .setUp > h4{
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+}
+.quote:hover, .setUp:hover{
+  background-color: #0abab5;
+  cursor: pointer;
+}
