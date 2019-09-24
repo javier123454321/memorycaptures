@@ -63,15 +63,15 @@
 
         <div class="modal-body reportIssueForm">
           <form class="reportIssue" action="contact.php" method="POST" required>
-            <input type="text" name="name" placeholder="Name" required><br>
-            <input type="email" name="mail" placeholder="E-mail" required><br>
+            <input  class="shortInput" type="text" name="name" placeholder="Name" required><br>
+            <input class="shortInput" type="email" name="mail" placeholder="E-mail" required><br>
             <br><br>
 
             Subject:<br>
-            <input id="issueSubject" type="text" name="subject" value="Help claiming a picture" placeholder="Subject" required><br>
+            <input class="longInput" id="issueSubject" type="text" name="subject" value="Help claiming a picture" placeholder="Subject" required><br>
 
             Comment:<br>
-            <textarea id="issueComment"name="message" rows="10" cols="50" required></textarea><br><br>
+            <textarea class="longInput" id="issueComment"name="message" rows="10" cols="50" required></textarea><br><br>
             <input type="submit" value="Send">
             <input type="reset" value="Reset">
           </form>

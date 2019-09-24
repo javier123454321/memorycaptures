@@ -128,13 +128,36 @@
     <h2>Get in Touch:</h2>
   </button>
 
-  <div class="info">
-  <p align="center">
-  For more info or to book us for a private event <br> contact us at <a id = "a01" href = "mailto:info@memorycaptures.com">info@memorycaptures.com</a>
-  </p>
-  <p id="a01", align="center">
-    702.606.0323 | 773.751.9536
-  </p>
+  <div class="info wrapper">
+    <div class="textinfo">
+      <p>
+        For more info or to book us for a private event <br>
+        contact us at <a id = "a01" href = "mailto:info@memorycaptures.com">info@memorycaptures.com</a>
+      </p>
+
+      <p id="a01", align="center">
+        702.606.0323 | 773.751.9536
+      </p> <br><br>
+    </div>
+
+    <div class="infoForm">
+
+      <p>Or drop us a line:</p>
+      <form class="contact" action="contact.php" method="POST" required>
+        <input class="shortInput" type="text" name="name" placeholder="Name" required><br>
+        <input class="shortInput" type="email" name="mail" placeholder="E-mail" required><br>
+        <br><br>
+
+        Subject:<br>
+        <input class="longInput" id="issueSubject" type="text" name="subject" value="Interest in working together" placeholder="Subject"><br>
+
+        Comment:<br>
+        <textarea class="longInput" id="issueComment"name="message" required></textarea><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+
 </div>
 
 </div>

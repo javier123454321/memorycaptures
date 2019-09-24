@@ -34,7 +34,7 @@ let length = coll.length
 let infoSectionHeight = document.getElementsByClassName('infosection')[0].offsetHeight;
 
 
-  for (i = 0; i < length; i++) {
+for (i = 0; i < length; i++) {
 
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
