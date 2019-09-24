@@ -36,22 +36,33 @@
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $visitor_email . "\r\n";
 
-    mail($mailTo, $email_title, $visitor_message, $headers);
-
-    echo "<h1>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</h1>";
+    if(mail($mailTo, $email_title, $visitor_message, $headers)){
+      echo "<div class='formSuccess'><h1>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</h1>";
+      echo "<br><br><a href='http://memorycaptures.com' class='buttonStyle'> Go Back Home </a>
+      </div>";
+    }else{
+      echo "<h1> Oops, something went wrong, please contact us at info@memorycaptures.com</h1>";
+    }
 ?>
-  <br><br>
-  <a href="http://memorycaptures.com" class="buttonStyle"> Go Back Home </a>
+
 </body>
 <style>
+
 body{
-  background-color: lightgrey;
+  background-color: whitesmoke;
 }
-h1{
-  color:#0abab5;
+.formSuccess{
+  background-color: white;
+  border-radius: 200px;
+  padding: 100px;
   margin: auto;
   margin-top: 15%;
   width:900px;
   max-width: 90%;
 }
+
+h1{
+  color:#0abab5;
+}
+
 </style>
