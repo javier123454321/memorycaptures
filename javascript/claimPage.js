@@ -22,7 +22,7 @@ function getPicture(){
         document.getElementById("imglink").setAttribute('href', imgPath);
         console.log("new src = " + document.getElementsByClassName("previewImg")[0].src);
       }
-    // 
+    //
     // document.getElementsByClassName("showPic")[0].style.display = "block";
     }
 

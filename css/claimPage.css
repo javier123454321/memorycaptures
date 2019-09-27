@@ -90,24 +90,34 @@ div.showPic{
   width: 500px;
 }
 
+#picID{
+  background-color: #CFE5E5;
+  border-radius: 10px;
+}
+
 @media only screen and (max-device-width:1024px){
   h3{
     font-size: 24px;
   }
   div.showPic{
+    margin: 15px;
     box-sizing: border-box;
   }
+  .subButton{
+    border-radius: 5px;
+    border: solid 1px #CFE5E5;
+    margin: 15px;
+  }
   div.claimLanding{
+    transform: translateY(-50vh);
     background-color: white;
     min-width: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     width: 100vw;
     padding-top: 30px;
-    /* height: 250px; */
     overflow: show;
     margin: auto;
-    /* margin-top: 5vh; */
-    /* margin-bottom: 20px; */
+    margin-top: 0;
     radius: 0;
     border-radius: 0px;
     height: 100vh;
