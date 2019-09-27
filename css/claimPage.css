@@ -44,12 +44,9 @@ div.claimLanding{
   transform: translateY(-70%);
   border-radius: 80px;
   border: solid 10px;
+  box-sizing: content-box;
   border-color: #0abab5;
 }
-
-div.showPic{
-  }
-
 
 .footer{
   position:fixed;
@@ -57,7 +54,6 @@ div.showPic{
 
 .modal-content{
   max-width: 800px;
-  /* margin: auto; */
   position: relative;
   top: 50vh;
   transform: translateY(-65%);

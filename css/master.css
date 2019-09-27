@@ -139,17 +139,14 @@ h3{
 }
 #a01:visited {
   color: #5C4E64;
-  background-color: transparent;
   text-decoration: none;
 }
 #a01:hover {
   color: dark blue;
-  background-color: transparent;
   text-decoration: underline;
 }
 #a01:active {
   color: white;
-  background-color: transparent;
   text-decoration: underline;
 }
 
@@ -170,19 +167,12 @@ div.landing{
   min-width: 85%;
 }
 
-table{
-  width: 100vw;
-}
-
-
-
 hr {
   border-top: 1px solid #0abab5;
   position center;
   min-width: 20%;
   max-width: 70%
   }
-
 
 .active { /* Refers to the buttons like "What We Do" etc */
   background-color: #0abab5;
@@ -207,6 +197,7 @@ hr {
   font-size: 15px;
   font-family: American Typewriter, courier;
 }
+
 .collapsibleshow {
   font-family: American Typewriter, courier;
   -webkit-transition: all .5s ease;

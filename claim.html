@@ -6,12 +6,14 @@
     <meta charset="utf-8">
     <title>Claim your Photograph</title>
 
-
+<!-- *************************Imports************************* -->
     <link rel="stylesheet" href="https://use.typekit.net/slu0gbu.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
     <link href="css/master.css" rel="stylesheet" type="text/css">
-    <link href="css/claimPage.css" rel="stylesheet" type="text/css">
     <link href="css/forms.css" rel="stylesheet" type="text/css">
+    <link href="css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="css/claimPage.css" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -32,6 +34,15 @@
           <input id="picID" type="text" name="Picture Code" placeholder="Picture ID">
           <input class="subButton" type="submit" name="submitButton" data-toggle="modal" data-target="#ModalPicDisplay" value="Search for Picture">
           <br> <br> <br>
+          <div id="navMenu">
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li id="activeMenuItem">Your Picture</li>
+            </ul>
+
+          </div>
       </form>
 
     </div>
@@ -80,13 +91,16 @@
             <input class="formSubmit" type="reset" value="Reset">
           </form>
         </div>
+      </div>
+    </div>
+  </div>
 
-  </div>
-  </div>
+
 
   <div class="footer">
       <p>Memory Captures, LLC</p>
   </div>
+
   <script type="text/javascript" src="/javascript/claimPage.js">
   </script>
 
