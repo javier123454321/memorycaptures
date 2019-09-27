@@ -23,32 +23,37 @@ function makeInfoSectionNormal(basePageSize){
   document.getElementsByClassName('infosection')[0].style.height = basePageSize + 'px';
 }
 
-
 function addInfoSectionSize(basePageSize, addition){
   document.getElementsByClassName('infosection')[0].style.height = (basePageSize + addition) + 'px';
 }
 
-let coll = document.getElementsByClassName("collapsible");
-let i;
-let length = coll.length
-let infoSectionHeight = document.getElementsByClassName('infosection')[0].offsetHeight;
+function makePageResponsive(){
+//Adds event listeners to the "Collapsiblle" buttons
+
+  let coll = document.getElementsByClassName("collapsible");
+  let i;
+  let length = coll.length
+  let infoSectionHeight = document.getElementsByClassName('infosection')[0].offsetHeight;
 
 
-for (i = 0; i < length; i++) {
+  for (i = 0; i < length; i++) {
 
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
 
-      let content = this.nextElementSibling;
+        let content = this.nextElementSibling;
 
-      if (content.style.display === "block") {
-        hideContent(this, content);
-        makeInfoSectionNormal(infoSectionHeight)
-      } else {
-        hideAllContent(document.getElementsByClassName("collapsibleshow"))
-        makeInfoSectionNormal(infoSectionHeight)
-        showContent(this, content);
-        addInfoSectionSize(infoSectionHeight, content.offsetHeight)
-      }
-    });
-  }
+        if (content.style.display === "block") {
+          hideContent(this, content);
+          makeInfoSectionNormal(infoSectionHeight)
+        } else {
+          hideAllContent(document.getElementsByClassName("collapsibleshow"))
+          makeInfoSectionNormal(infoSectionHeight)
+          showContent(this, content);
+          addInfoSectionSize(infoSectionHeight, content.offsetHeight)
+        }
+      });
+    }
+}
+
+makePageResponsive();

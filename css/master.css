@@ -38,9 +38,11 @@ div.info {
   margin: auto;
 }
 
-.info>h3{
+.info > h3{
   font-size: 22px;
   text-align: left;
+  color:#0abab5;
+
 }
 
 .info > ul {
