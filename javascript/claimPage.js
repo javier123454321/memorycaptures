@@ -1,10 +1,12 @@
 //Script finds the image based on pitcure ID and displays it along with a download button in the claimPage
     // Script by: Javier Gonzalez javier.e.glz@gmail.com
+var cloudinary = require('cloudinary').v2;
 
 function findPicture(pictureID){
   let imgPath = "https://res.cloudinary.com/memorycaptures-com/image/upload/v1569562371/MemoriesCaptured/" + pictureID + ".jpg";
+  let displayPhoto = 
   if(isAPicture(pictureID)){
-      document.getElementsByClassName("previewImg")[0].src = imgPath;
+      document.getElementsByClassName("claimPhoto")[0].innerHTML = ""
       document.getElementById("downloadLink").setAttribute('href', imgPath);
       document.getElementById("imglink").setAttribute('href', imgPath);
       console.log("new src = " + document.getElementsByClassName("previewImg")[0].src);
