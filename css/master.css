@@ -116,18 +116,21 @@ h3{
   text-decoration: none;
   border: solid 3px;
   padding: 8px;
-  /* margin:15px; */
   border-radius: 10px;
   opacity: .6;
   font-size: 12pt;
 }
 
-.buttonStyle:hover {
+.buttonStyle:hover{
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
   color: white;
   background-color: #0abab5;
-  margin: 5px;
+  border: solid 3px white;
+  border-radius: 10px;
   opacity: 1;
   font-size: 14pt;
+  padding: 8px;
 }
 
 #FindOutMore{

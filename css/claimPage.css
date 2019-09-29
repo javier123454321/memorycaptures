@@ -52,6 +52,15 @@ div.claimLanding{
   position:fixed;
 }
 
+/* .modal{
+  background-color: darkgrey;
+  opacity:.5;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+} */
 .modal-content{
   max-width: 800px;
   position: relative;
@@ -60,6 +69,7 @@ div.claimLanding{
   border-radius: 30px;
   border: solid #0abab5 5px;
   padding-bottom: 30px;
+  /* background-color: #e1e1e1; */
 }
 
 #claimPhotoModal{
@@ -72,8 +82,6 @@ div.claimLanding{
   margin: auto;
 }
 .reportIssue{
-  /* display: none; */
-  /* opacity: 0; */
   text-align: center;
   margin: auto;
 }

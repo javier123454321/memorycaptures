@@ -17,8 +17,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <!-- <script src="packages/lodash/lodash.js" type="text/javascript"></script>
+    <script src="packages/cloudinary-core/cloudinary-core.js" type="text/javascript"></script> -->
   </head>
+
   <body>
     <img class="landingimage" src="/images/landing-bg2.jpg">
     <div class="claimLanding">
@@ -29,11 +31,12 @@
 
           <h3>Insert Picture Code to Claim Your Picture:</h3>
 
-          <!-- A text input that fetches an image based on the id given by user
-              Currently it only works as a -->
+          <!-- A text input that fetches an image based on the id given by user -->
+
           <input id="picID" type="text" name="Picture Code" placeholder="Picture ID">
           <input class="subButton" type="submit" name="submitButton" data-toggle="modal" data-target="#ModalPicDisplay" value="Search for Picture">
           <br> <br> <br>
+
           <div id="navMenu">
 
             <ul>
@@ -43,6 +46,7 @@
             </ul>
 
           </div>
+
       </form>
 
     </div>
@@ -57,16 +61,14 @@
 
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="modal-title">Found Your Memory!</h3>
+          <h3 id="claimModalTitle" class="modal-title"></h3>
         </div>
 
         <div class="modal-body claimPhoto">
-          <a id="downloadLink" class="buttonStyle" href="https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg" download="Captured Memory.jpg" target="_blank">DOWNLOAD LINK</a>
-          <br> <br><br>
-          <a id="imglink" href="https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg"><img class="previewImg" src = "https://res.cloudinary.com/memorycaptures-com/image/upload/v1566865326/sample.jpg" alt="Captured Memory" title="View Full Resolution Image"></a>
-
-          <br><br><a class="buttonStyle" id="reportIssueButton"> Need Help Claiming?</a>
         </div>
+
+        <a class="buttonStyle" id="reportIssueButton">Need Help Claiming?</a>
+
 
       </div>
       <div class="modal-content" id="reportIssueModal">
