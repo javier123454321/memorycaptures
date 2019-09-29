@@ -9,6 +9,7 @@ h3{
 
 .previewImg{
   max-width:500px;
+  max-height:50vh;
   height:auto;
   margin:auto;
 }

@@ -5,6 +5,7 @@
   border-radius: 20px;
   color: #0abab5;
   max-width: 100%;
+
 }
 
 .shortInput, .longInput{
@@ -13,9 +14,10 @@
   border-bottom: solid 2px lightgrey;
   border-left: solid 2px lightgrey;
   padding: 2px;
+  width:500px;
   margin: 4px;
   background-color: whitesmoke;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .longInput {
