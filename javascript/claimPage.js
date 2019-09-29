@@ -1,6 +1,5 @@
 //Script finds the image based on pitcure ID and displays it along with a download button in the claimPage
     // Script by: Javier Gonzalez javier.e.glz@gmail.com
-var cloudinary = require('cloudinary').v2;
 
 function findPicture(pictureID){
   let imgPath = "\"https://res.cloudinary.com/memorycaptures-com/image/upload/v1569562371/MemoriesCaptured/IMG_" + pictureID + ".jpg\"";
@@ -25,7 +24,6 @@ function isAPicture(ID){
   // preventDefault();
   //To Do define if the picture code is valid, return Boolean
   //For now just checking if ID is an empty string
-  console.log(ID != "");
   return (ID != "");
 }
 
@@ -36,18 +34,16 @@ function getPicture(){
     document.getElementById("reportIssueModal").style.display = "none";
 
     let pictureID = document.getElementById("picID").value;
-    console.log("GetPicture Fired");
     findPicture(pictureID);
   };
 
 
-
-let showIssueForm = document.getElementById("reportIssueButton");
-showIssueForm.addEventListener("click", function(){
-  showReportIssueScreen()}, false);
-
 function showReportIssueScreen(){
-  console.log("showReportIssueScreen called");
   document.getElementById("claimPhotoModal").style.display = "none";
   document.getElementById("reportIssueModal").style.display = "block";
   };
+
+let showIssueForm = document.getElementById("reportIssueButton");
+showIssueForm.addEventListener("click", function(){
+  showReportIssueScreen()
+}, false);
