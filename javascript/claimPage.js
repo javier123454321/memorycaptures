@@ -1,6 +1,7 @@
 //Script finds the image based on pitcure ID and displays it along with a download button in the claimPage
     // Script by: Javier Gonzalez javier.e.glz@gmail.com
 function displayPictureModal(){
+    document.getElementById("reportIssueModal").style.display = "none";
     document.getElementById("claimPhotoModal").style.display = "block";
     let pictureID = document.getElementById("picID").value;
     setPicture(pictureID);
