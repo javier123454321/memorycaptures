@@ -1,0 +1,23 @@
+{
+  "name": "memorycaptures",
+  "version": "1.0.0",
+  "description": "A website for my company Memory Captures\r http://memorycaptures.com",
+  "main": "index.js",
+  "dependencies": {
+    "cloudinary-core": "^2.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javier123454321/memorycaptures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javier123454321/memorycaptures/issues"
+  },
+  "homepage": "https://github.com/javier123454321/memorycaptures#readme"
+}

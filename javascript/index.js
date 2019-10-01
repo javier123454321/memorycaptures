@@ -1,6 +1,5 @@
 
 //Make a collapsible button that hides or displays a section of text when clicked
-
 function hideContent(collapsible, content){
   content.style.display = "none";
   collapsible.classList.remove("collapsibleshow");

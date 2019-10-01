@@ -8,7 +8,8 @@ function displayPictureModal(){
   };
 
 function setPicture(pictureID){
-  let imgPath = "https://res.cloudinary.com/memorycaptures-com/image/upload/v1569562371/MemoriesCaptured/IMG_" + pictureID + ".jpg";
+  let imgPath = "https://res.cloudinary.com/memorycaptures-com/image/upload/MemoriesCaptured/IMG_" + pictureID + ".jpg";
+  console.log(imgPath);
 
   let displayPhotoHTML = '<a id="downloadLink" class="buttonStyle" href='+ imgPath +
       ' download="Captured Memory.jpg" target="_blank">' +
