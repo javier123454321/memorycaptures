@@ -117,7 +117,6 @@ h3{
 
 .buttonStyle {
   -webkit-transition: all .5s ease;
-  box-sizing: content-box;
   width: 100px;
   color: #0abab5;
   background-color: white;
@@ -127,6 +126,21 @@ h3{
   border-radius: 10px;
   opacity: .6;
   font-size: 12pt;
+  margin-top: 60px;
+}
+
+.buttonsMenu > ul {
+  list-style: none;
+  list-style-position: outside;
+  padding-left: none;
+  margin: 0;
+}
+.buttonsMenu > li {
+  margin-top: 50px;
+}
+
+.buttonsMenu{
+  margin-top: 5%;
 }
 
 .buttonStyle:hover{
@@ -267,7 +281,6 @@ hr {
     overflow: visible;
     margin: auto;
     margin-top: 15vh;
-    margin-bottom: 550px;
     max-width: 95vw;
     min-width: 85%;
   }
