@@ -36,7 +36,7 @@ div.info {
 }
 
 .info > h3{
-  font-family: itc-american-typewriter, serif;
+  font-family: 'itc-american-typewriter', serif;
   font-size: 22px;
   text-align: left;
   color:#0abab5;
@@ -98,11 +98,11 @@ img.landingimage{
 h1{
   font-size: 36px;
   letter-spacing: 1px;
-  font-family: itc-american-typewriter, serif;
+  font-family: 'itc-american-typewriter', serif;
 }
 
-h2{
-  @extend h1;
+h2, h2{
+  font-family: 'itc-american-typewriter', serif;
   font-size: 28px;
 }
 
@@ -178,7 +178,7 @@ h3{
 }
 
 body{
-  font-family:American Typewriter, itc-american-typewriter;
+  font-family:'itc-american-typewriter', serif;
   background-color: white;
   text-align: center;
   padding: 0;
@@ -222,11 +222,11 @@ hr {
   text-align: center;
   outline: none;
   font-size: 15px;
-  font-family: American Typewriter,  itc-american-typewriter;
+  font-family: 'itc-american-typewriter', serif;
 }
 
 .collapsibleshow {
-  font-family: American Typewriter,  itc-american-typewriter;
+  font-family: 'itc-american-typewriter', serif;
   -webkit-transition: all .5s ease;
   max-width: 600px;
   width: 85%;
