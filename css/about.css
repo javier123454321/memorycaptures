@@ -1,73 +1,85 @@
 .aboutLanding{
-  margin-top: 60vh;
-  transform:translateY(-30vh);
+  margin: auto;
+  margin-top: 15vh;
+  background-color: black;
+  color: white;
+  opacity: .7;
+  max-width: 75%;
+  padding: 65px
+}
+#navMenu{
+  margin-top:15vh;
+  opacity:1;
+  color:white;
+  width: 100%;
+  position: sticky;
+  margin-bottom: 0;
 }
 
-.privateEventInfo, .restaurantInfo{
+#navMenu > ul{
+  background-color:#0abab5;
+  font-weight: bold;
+  color: white; !important
+  opacity: 1;
+  margin-left: 0;
+}
+
+#navMenu >ul > li:hover{
+  color: #E5ED61;
+}
+
+.infoWrapper{
+    padding: 60px 0;
+    background-color: lightgrey;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+.infoText{
+    padding: 30px 65px;
+    margin-top: 40px;
+    overflow: hidden;
     margin: auto;
     background-color: #E5ED61;
     opacity:.85;
     text-align: left;
-    max-width: 90%;
-    width:1000px;
+    max-width: 75%;
     min-width: 250px;
-    display: flex;
     align-items: stretch;
     margin-bottom: 20px;
   }
 
-.infoWrapper{
-    background-color: lightgrey;
-    margin-top: 30vh;
-    margin-bottom: 0;
-    text-align: center;
-    padding: 80px 0 ;
-  }
-
-.privateEventInfo{
-    padding-left: 80px;
-  }
-
-.restaurantInfo{
-    padding-right: 80px;
-    margin: auto;
-  }
-
-.infoTextEvents, .infoTextRestaurant{
-    padding-bottom:20px;
-    width:800px;
-  }
-
-.infoTextEvents{
-  }
+p{
+  margin-bottom: 20pt;
+}
 
 h3{
     font-weight: bolder;
   }
 
-.infoTextRestaurant{
-    margin-left: 40px;
-  }
+.buttonWrapper{
+  width:100%;
+  text-align: center;
+  margin:auto;
+}
 
 .quote{
-    border-left: solid 1px;
-    float:right;
-  }
-
-.setUp{
-    border-right: solid 1px;
-    float:left;
-  }
-
-.quote, .setUp{
+    -webkit-transition: all .5s ease;
+    font-family: 'itc-american-typewriter', serif;
+    font-size: 24px;
+    color:#0abab5;
+    border: solid 3px;
+    border-radius: 10px;
     border-color: white;
     box-sizing: border-box;
-    display: flex;
     align-content: center;
     width: 200px;
+    text-align: center;
+    background-color: #E5ED61;
   }
 
-.quote > h4, .setUp > h4{
+.quote > h4,{
     text-align: center;
     position: relative;
     left: 50%;
@@ -75,34 +87,28 @@ h3{
     top: 40%;
   }
 
-.quote:hover, .setUp:hover{
+.quote:hover, .quote:active{
     background-color: #0abab5;
+    color: white;
     cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transform: scale(1.05);
+    box-shadow:  0 0 5px black;
   }
 
 @media only screen and (min-device-width:800px){
+
   .quote{
     border-top: solid 1px;
     margin: auto;
-    /* position: absolute; */
-    display:flex;
-  }
-
-  .setUp{
-    border-right: solid 1px;
-    float:left;
-    }
-
-  .quote, .setUp{
     border-color: white;
     box-sizing: border-box;
-    display: flex;
     align-content: center;
     width: 200px;
     }
 
-    .infoTextEvents, .infoTextRestaurant{
-      padding-bottom:20px;
-      width:100vw;
-      }
+  .infoText{
+    padding-bottom:20px;
+    width:100%;
+    }
 }
