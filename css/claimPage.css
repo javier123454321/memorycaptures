@@ -33,8 +33,8 @@ img.landingimage{
 
 div.claimLanding{
   background-color: #e1e1e1;
-  padding: 40px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 0px;
   display: block;
   max-width: 800px;
   min-width: 400px;
@@ -47,21 +47,22 @@ div.claimLanding{
   border: solid 10px;
   box-sizing: content-box;
   border-color: #0abab5;
+  overflow-x: hidden;
 }
 
 .footer{
   position:fixed;
 }
 
-/* .modal{
-  background-color: darkgrey;
-  opacity:.5;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  z-index: -1;
-} */
+#navMenu > ul{
+  background-color: rgba(0,0,0,0);
+  color: #0abab5;
+}
+
+#navMenu > ul >li:hover{
+  color: black;
+}
+
 .modal-content{
   max-width: 800px;
   position: relative;
@@ -70,7 +71,7 @@ div.claimLanding{
   border-radius: 30px;
   border: solid #0abab5 5px;
   padding-bottom: 30px;
-  /* background-color: #e1e1e1; */
+  /* background-color: #e1e1e1; */e
 }
 
 #claimPhotoModal{
