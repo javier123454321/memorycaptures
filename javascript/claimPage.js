@@ -12,8 +12,8 @@ function setPicture(pictureID){
   console.log(imgPath);
 
   let displayPhotoHTML = '<a id="downloadLink" class="buttonStyle" href='+ imgPath +
-      ' download="Captured Memory.jpg" target="_blank">' +
-      'DOWNLOAD LINK</a> <br><br><br>' + '<a id="imglink" href=' + imgPath + '>' +
+      ' download="Captured Memory.jpg" target="blank">' +
+      'DOWNLOAD LINK</a> <br><br><br>' + '<a id="imglink" href=' + imgPath + ' target="blank">' +
       '<img class="previewImg" src =' + imgPath + ' alt="Captured Memory" title="View Full Resolution Image"></a>'
 
   let displayErrorHTML = '<h4>Sorry, it seems the code you entered is incorrect. <br><br>'+
