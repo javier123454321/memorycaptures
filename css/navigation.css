@@ -4,14 +4,16 @@ body{
 }
 
 a, a:active, a:hover{
-  all:unset;}
+  all:unset;
+}
 
 #navMenu{
   text-align: center;
-  padding: 0;
-  opacity: .65;
+  opacity:1;
+  color:white;
+  width: 100%;
+  position: sticky;
   z-index: 100;
-  width:60%;
   margin: auto;
   margin-bottom: 0px;
   height:30px;
@@ -19,11 +21,13 @@ a, a:active, a:hover{
 }
 
 #navMenu > ul{
+    background-color:#0abab5;
+    color: white;
+    margin-left: 0;
     padding-inline-start: 0px;
     list-style: none outside none;
     font-size: 14px;
     font-weight: 400;
-    color: #61C2D3;
     height: 100%;
 }
 
@@ -42,7 +46,7 @@ a, a:active, a:hover{
   border-bottom: solid 1px #61C2D3;
   width: 100%;
   height: 100%;
-  color: #61C2D3;
+  color: #E5ED61;
 }
 
 #activeMenuItem{
