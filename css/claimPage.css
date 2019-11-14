@@ -47,7 +47,7 @@ div.claimLanding{
   border: solid 10px;
   box-sizing: content-box;
   border-color: #0abab5;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .footer{
