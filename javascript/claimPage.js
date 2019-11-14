@@ -19,7 +19,10 @@ function setPicture(pictureID){
   let displayErrorHTML = '<h4>Sorry, it seems the code you entered is incorrect. <br><br>'+
                           'Please double check the code or contact us to get your photo.</h4><br>'
 
-  let loadingScreenHTML = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'
+  let loadingScreenHTML = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'+
+                            '<h3>Loading...</h3>'+
+                            '<h4>Contact Us for Booking Private Events</h4><br>'
+
 
   if(pictureID == ""){
     document.getElementById("claimModalTitle").innerText = "Insert Your Photo Code";
@@ -31,7 +34,7 @@ function setPicture(pictureID){
     //Totally just setting a timer because it looks nice to have a loader
     setTimeout(function(){
       getPicture(imgPath, displayPhotoHTML, displayErrorHTML,)
-    },500);
+    },1500);
   }
 };
 
