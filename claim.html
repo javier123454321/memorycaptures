@@ -34,7 +34,10 @@
 
   <body>
     <img class="landingimage" src="images/landing-bg2.jpg">
+
     <div class="claimLanding">
+
+      <div class="getPicForm">
       <form onsubmit="displayPictureModal(); return false">
 
 
@@ -44,16 +47,16 @@
 
           <input id="picID" type="text" name="Picture Code" placeholder="Picture ID">
           <input class="subButton" type="submit" name="submitButton" data-toggle="modal" data-target="#ModalPicDisplay" value="Search for Picture">
-          <br> <br> <br>
+      </div>
+      <div id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="activeMenuItem">Claim</li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
 
-          <div id="navMenu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li id="activeMenuItem">Claim</li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
       </form>
     </div>
   </body>
