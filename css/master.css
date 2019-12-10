@@ -269,10 +269,13 @@ hr {
 
   .infosection{
     font-size: 24px;
-    height: 120vh;
+    height: 120vh; 
 }
+  .landingtext{
+    margin-bottom: 30%;
+  }
   div.landing{
-    height: 120vh;
+    height: 80vh;
     overflow: visible;
     margin: auto;
     margin-top: 15vh;
