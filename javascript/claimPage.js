@@ -8,13 +8,31 @@ function displayPictureModal(){
   };
 
 function setPicture(pictureID){
-  let imgPath = "https://res.cloudinary.com/memorycaptures-com/image/upload/MemoriesCaptured/IMG_" + pictureID + ".jpg";
-  console.log(imgPath);
+  let imgPath = `https://res.cloudinary.com/memorycaptures-com/image/upload/MemoriesCaptured/IMG_${pictureID}.jpg`;
+  let imgReduced = `https://res.cloudinary.com/memorycaptures-com/image/upload/c_limit,h_800,w_800/MemoriesCaptured/IMG_${pictureID}.jpg`;
 
-  let displayPhotoHTML = '<a id="downloadLink" class="buttonStyle" href='+ imgPath +
-      ' download="Captured Memory.jpg" target="blank">' +
-      'DOWNLOAD LINK</a> <br><br><br>' + '<a id="imglink" href=' + imgPath + ' target="blank">' +
-      '<img class="previewImg" src =' + imgPath + ' alt="Captured Memory" title="View Full Resolution Image"></a>'
+  let displayPhotoHTML = `<a id="downloadLink" 
+                          class="buttonStyle" 
+                          href=${imgPath} 
+                          download="Captured Memory.jpg" 
+                          target="blank">
+
+                            DOWNLOAD LINK
+
+                          </a> 
+
+                          <br><br><br> 
+                          
+                          <a id="imglink" 
+                          href=${imgPath} 
+                          target="blank">
+
+                              <img class="previewImg" 
+                              src =${imgReduced} 
+                              alt="Captured Memory" 
+                              title="View Full Resolution Image">
+                              
+                          </a>`
 
   let displayErrorHTML = '<h4>Sorry, it seems the code you entered is incorrect. <br><br>'+
                           'Please double check the code or contact us to get your photo.</h4><br>'

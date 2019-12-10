@@ -54,6 +54,10 @@ div.claimLanding{
   position:fixed;
 }
 
+.getPicForm{
+  margin-bottom: 30px;
+}
+
 #navMenu > ul{
   background-color: rgba(0,0,0,0);
   color: #0abab5;
@@ -105,6 +109,12 @@ div.claimLanding{
   h3{
     font-size: 24px;
   }
+
+  div.getPicForm{
+    position: absolute;
+    top: 30%;
+  }
+
   div.showPic{
     margin: 15px;
     box-sizing: border-box;
@@ -114,19 +124,33 @@ div.claimLanding{
     border: solid 1px #CFE5E5;
     margin: 15px;
   }
+
+  .getPicForm{
+
+  }
   div.claimLanding{
-    transform: translateY(-50vh);
     background-color: white;
     min-width: 0px;
     box-sizing: border-box;
     width: 100vw;
     padding-top: 30px;
     overflow: show;
-    margin: auto;
     margin-top: 0;
     radius: 0;
     border-radius: 0px;
-    height: 100vh;
+    position:absolute;
+    top: 60%;
+    height: 50vh;
+    border-radius: 40px;
+  }
+
+  #navMenu{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+  #navMenu > ul{
+    color: #0abab5;
   }
 
   .previewImg{
