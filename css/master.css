@@ -4,6 +4,14 @@ html{
   min-height: 100%;
   margin: 0;
   padding: 0;
+  background-color: rgb(154, 208, 203)
+}
+
+body{
+  font-family:'itc-american-typewriter', serif;
+  text-align: center;
+  padding: 0;
+  margin: auto;
 }
 
 p{
@@ -12,6 +20,44 @@ p{
 
 .landingtext{
   font-size: 18px;
+}
+
+.bg-landing{
+  height: 80vw;
+  width: 80vw;
+  background-color: #0abab5;
+  border-radius: 50%;
+  position: fixed;
+  top: -55vh;
+  left: -30vw;
+  z-index: -1;
+}
+
+.landing{
+  height: 60vh;
+  overflow: visible;
+  margin: auto;
+  margin-top: 40vh;
+  max-width: 500px;
+  min-width: 85%;
+  background-color: none;
+}
+
+.landing h1, .landing p{
+  text-align: left;
+  max-width: 40vw;
+}
+
+.buttonsMenu{
+  margin: 35px 0;
+}
+
+.buttonsMenu li{
+  list-style: none;
+}
+
+.buttonsMenu > ul > li{
+  margin-top: 30px;
 }
 
 .infosection{
@@ -77,10 +123,7 @@ header{
   color: white;
 }
 
-body{
-  background-color: lightgrey;
-  z-index: -2;
-}
+
 
 img.landingimage{
   background-position: center;
@@ -133,15 +176,6 @@ h3{
   font-size: 12pt;
 }
 
-
-.buttonsMenu{
-  margin: 35px 0;
-}
-
-.buttonsMenu{
-  margin-top: 5%;
-}
-
 .buttonStyle:hover{
   cursor: pointer;
   -webkit-transition: all .5s ease;
@@ -170,23 +204,6 @@ h3{
 .a01:active {
   color: white;
   text-decoration: underline;
-}
-
-body{
-  font-family:'itc-american-typewriter', serif;
-  background-color: white;
-  text-align: center;
-  padding: 0;
-  margin: auto;
-}
-
-div.landing{
-  height: 60vh;
-  overflow: visible;
-  margin: auto;
-  margin-top: 40vh;
-  max-width: 500px;
-  min-width: 85%;
 }
 
 hr {
