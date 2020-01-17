@@ -38,7 +38,7 @@
 
 <section>
 
-<img class="landingimage" src="images/about-bg.jpeg">
+  <img class="landingimage" src="images/about-bg.jpeg">
   <div class="aboutLanding">
         <h1>
             <strong>About Us</strong>
@@ -56,108 +56,100 @@
 
   <div class="infoWrapper">
 
-          <div class="infoText">
+    <div class="infoText">
 
-            <h3>Private Events:</h3>
+      <h3>Private Events:</h3>
 
-            <p>A professional photographer will take different shots of people
-              at your event and print them right then and there so all guests
-              will have the opportunity to  leave with a physical copy of the
-              memory. We bring our own props and backdrop. </p>
+      <p>A professional photographer will take different shots of people
+        at your event and print them right then and there so all guests
+        will have the opportunity to  leave with a physical copy of the
+        memory. We bring our own props and backdrop. 
+      </p>
 
-              <p>
-              Each guest receives a digital copy, or you can pre-buy physical
-              copies for anyone to take home after the event. </p>
+      <p>
+        Each guest receives a digital copy, or you can pre-buy physical
+        copies for anyone to take home after the event. 
+      </p>
 
-              <p>
-              Make no mistake, this is no regular photobooth, but a group of
-              experts that are ready to help ensure everyone has a great time.
-              </p>
-          <div class="buttonWrapper">
-            <button class="quote">
-              <h4><a href="contact.html">Get A Quote</a></h4>
-            </button>
+      <p>
+      Make no mistake, this is no regular photobooth, but a group of
+      experts that are ready to help ensure everyone has a great time.
+      </p>
+
+      <div class="buttonWrapper">
+        <button class="quote" id ="reportIssueButton" data-toggle="modal" data-target="#myModal">
+          <h4>Get a Quote</h4>
+        </button>
+      </div>
+
+    </div>
+    <div class="infoText">
+
+      <h3>Setting up a Booth at a Restarant</h3>
+
+      <p>We build oncoming clientelle through individualized physical and digital marketing.
+        <br><br>
+        <strong>How?</strong>
+        <br><br>
+        We offer a complimentary picture postcard to all your guests.
+        This postcard has a wallet size photo of the guest and is surrounded by your company's photographs and promotions.
+        <br><br>
+        Guests will keep this and this at no cost to your business.
+        <br><br>
+        How our business will develop:
+        <br><br>
+        Guests have the option of purchasing a 4 by 6 FRAMED photograph of  the picture we took.
+        <br><br>
+        If they want to keep the memory they have the option to do so.
+        <br><br>
+        If not no problem!
+        <br><br>
+        We are happy for them to just keep the complimentary promotional postcard anyway!
+        <br><br>
+        Memory Captures is a great way to help you achieve your advertising and customer retention strategy with no investment necessary. We have several partners which use our services to promote themselves in the Chicago area. Let's be partners!
+        <br><br>
+
+        Each guest receives a digital copy, or you can pre-buy physical copies for anyone to take home after the event. <br><br>
+
+        Make no mistake, this is no regular photobooth, but a group of experts that are ready to help ensure everyone has a great time.
+      </p>
+
+
+      <div class="buttonWrapper" >
+        <button class="quote" id ="reportIssueButton" data-toggle="modal" data-target="#myModal">
+          <h4>Set Up a Booth</h4>
+        </button>
+      </div>
+    </div>  
+
+    <div class="modal fade" id="myModal" role="dialog" aria-hidden="true" tabindex="-1" z-index="150">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="contactIssueModal">
+    
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4> <b>Contact Us</b></h4>
+          </div>
+
+          <div class="modal-body">
+            <form class="reportIssue" action="contact.php" method="POST" required>
+              <input  class="shortInput" type="text" name="name" placeholder="Name" required><br>
+              <input class="shortInput" type="email" name="mail" placeholder="E-mail" required><br>
+              <br><br>
+              Subject:<br>
+              <input class="longInput" id="issueSubject" type="text" name="subject" value="Inquiry for Working Together" placeholder="Subject" required><br>
+              Comment:<br>
+              <textarea class="longInput" id="issueComment"name="message" rows="10" cols="50" required></textarea><br><br>
+              <input class="formSubmit" type="submit" value="Send">
+              <input class="formSubmit" type="reset" value="Reset">
+            </form>
           </div>
 
         </div>
-
-
-        <div class="infoText">
-
-            <h3>Setting up a Booth at a Restarant</h3>
-
-            <p>We build oncoming clientelle through individualized physical and digital marketing.
-              <br><br>
-              <strong>How?</strong>
-              <br><br>
-              We offer a complimentary picture postcard to all your guests.
-              This postcard has a wallet size photo of the guest and is surrounded by your company's photographs and promotions.
-              <br><br>
-              Guests will keep this and this at no cost to your business.
-              <br><br>
-              How our business will develop:
-              <br><br>
-              Guests have the option of purchasing a 4 by 6 FRAMED photograph of  the picture we took.
-              <br><br>
-              If they want to keep the memory they have the option to do so.
-              <br><br>
-              If not no problem!
-              <br><br>
-              We are happy for them to just keep the complimentary promotional postcard anyway!
-              <br><br>
-              Memory Captures is a great way to help you achieve your advertising and customer retention strategy with no investment necessary. We have several partners which use our services to promote themselves in the Chicago area. Let's be partners!
-              <br><br>
-
-              Each guest receives a digital copy, or you can pre-buy physical copies for anyone to take home after the event. <br><br>
-
-              Make no mistake, this is no regular photobooth, but a group of experts that are ready to help ensure everyone has a great time.
-            </p>
-
-
-            <div class="buttonWrapper" >
-              <button class="quote" id ="reportIssueButton">
-                <h4><a href="contact.html">Set Up a Booth</a></h4>
-              </button>
-            </div>
-
-              <div class="modal fade" id="ModalPicDisplay" role="dialog" aria-hidden="true" tabindex="-1" z-index="150">
-                <div class="modal-content" id="reportIssueModal">
-
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4> <b>Contact Us</b></h4>
-                  </div>
-                <div class="modal-body">
-                  <form class="reportIssue" action="contact.php" method="POST" required>
-                    <input  class="shortInput" type="text" name="name" placeholder="Name" required><br>
-                    <input class="shortInput" type="email" name="mail" placeholder="E-mail" required><br>
-                    <br><br>
-
-                    Subject:<br>
-                    <input class="longInput" id="issueSubject" type="text" name="subject" value="Inquiry for Working Together" placeholder="Subject" required><br>
-
-                    Comment:<br>
-                    <textarea class="longInput" id="issueComment"name="message" rows="10" cols="50" required></textarea><br><br>
-                    <input class="formSubmit" type="submit" value="Send">
-                    <input class="formSubmit" type="reset" value="Reset">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+      </div>
+    </div>
   </div>
 </section>
-<script type="text/javascript">
-function showReportIssueScreen(){
-  document.getElementById("ModalPicDisplay").style.display = "block";
-  };
-
-let showIssueForm = document.getElementById("reportIssueButton");
-showIssueForm.addEventListener("click", function(){
-  console.log("something is happening");
-  showReportIssueScreen()
-}, false);
+<script type="text/javascript" src="javascript/claimPage.js">
+</script>
 </script>
