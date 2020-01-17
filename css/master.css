@@ -18,21 +18,6 @@ p{
   margin:0;
 }
 
-.landingtext{
-  font-size: 18px;
-}
-
-.bg-landing{
-  height: 80vw;
-  width: 80vw;
-  background-color: #0abab5;
-  border-radius: 50%;
-  position: fixed;
-  top: -55vh;
-  left: -30vw;
-  z-index: -1;
-}
-
 .landing{
   height: 60vh;
   overflow: visible;
@@ -41,25 +26,86 @@ p{
   max-width: 500px;
   min-width: 85%;
   background-color: none;
+  overflow: hidden;
+  align-items: flex-end;
+  
+}
+
+
+.landing > .landingText{
+  min-width: 10vw;
+  max-width: 40vw;
 }
 
 .landing h1, .landing p{
   text-align: left;
-  max-width: 40vw;
 }
+
+.bg-landing{
+  height: 120vw;
+  width: 120vw;
+  background-color: #0abab5;
+  border-radius: 50%;
+  position: fixed;
+  top: -85vh;
+  left: -60vw;
+  z-index: -1;
+}
+
 
 .buttonsMenu{
-  margin: 35px 0;
+  margin: 35px auto;
+  width: 80vw;
+  max-width: 350px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
 }
 
-.buttonsMenu li{
-  list-style: none;
+.buttonsMenu > .buttonStyle.noncta: :first-child{
+  border-radius: 20px 0 20px 0;
 }
 
-.buttonsMenu > ul > li{
-  margin-top: 30px;
+.buttonStyle {
+  font-family: 'itc-american-typewriter', serif;
+  -webkit-transition: all .5s ease;
+  min-width: 100px;
+  color: #0abab5;
+  background-color: white;
+  text-decoration: none;
+  border: solid 3px;
+  padding: 8px;
+  border-radius: 20px;
+  opacity: .6;
+  font-size: 12pt;
+  box-sizing: content-box;
 }
 
+.buttonStyle.cta{
+  color: rgb(171, 0, 0);
+  border: solid 2px rgb(171, 0, 0);;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+
+.buttonStyle.noncta{
+  grid-row: 2 / 3;
+}
+
+.buttonStyle:hover{
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  color: white;
+  background-color: #0abab5;
+  border: solid 2px white;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.buttonStyle.cta:hover{
+  background-color: rgb(171, 0, 0);
+  transform:none;
+}
 .infosection{
   background-color: white;
   padding-top: 35px;
@@ -76,7 +122,7 @@ div.info {
   display: none;
   width: 70%;
   max-width: 500px;
-  min width 70%-50px;
+  min width: 70%;
   margin: auto;
 }
 
@@ -160,32 +206,6 @@ h3{
 
 .showPic{
   display: none;
-}
-
-.buttonStyle {
-  font-family: 'itc-american-typewriter', serif;
-  -webkit-transition: all .5s ease;
-  width: 100px;
-  color: #0abab5;
-  background-color: white;
-  text-decoration: none;
-  border: solid 3px;
-  padding: 8px;
-  border-radius: 10px;
-  opacity: .6;
-  font-size: 12pt;
-}
-
-.buttonStyle:hover{
-  cursor: pointer;
-  -webkit-transition: all .5s ease;
-  color: white;
-  background-color: #0abab5;
-  border: solid 3px white;
-  border-radius: 10px;
-  opacity: 1;
-  font-size: 14pt;
-  padding: 8px;
 }
 
 .a01 {
