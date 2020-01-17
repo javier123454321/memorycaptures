@@ -2,6 +2,10 @@ html{
   height:100vh;
 }
 
+body{
+  background: none;
+}
+
 h3{
   font-size: 24px;
   font-family: itc-american-typewriter, serif;
@@ -12,6 +16,7 @@ h3{
   max-height:50vh;
   height:auto;
   margin:auto;
+  margin: 15px;
 }
 
 img.landingimage{

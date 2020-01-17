@@ -28,180 +28,184 @@
   <link href="css/navigation.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body>
-<section>
-  <div class="landing">
 
-      <img class="landingimage" src="images/landing-bg.jpg" alt="Camera Backdrop Image">
+  <section>
+    <div class="landing">
+      <div class="bg-landing"></div>
+      <div class="bg-landing two"></div>
+      <div class="landingText">
+        <h1>
+            Memory Captures, LLC
+        </h1>
 
-      <h1>
-         Memory Captures, LLC
-      </h1>
-
-      <p class = "landingtext">
-        A company created to capture the moment and provide memories of irreplaceable experiences
-      </p>
-
-      <div class="buttonsMenu">
-        <a class="buttonStyle" href="#about"> About us</a>
-      </div>
-      <div class="buttonsMenu">
-        <a class="buttonStyle" href="claim.html"> Claim A Photo</a>
-      </div>
-
-
-
-
-      </div>
-  </div>
-
-
-
-</section>
-<div id="navMenu">
-  <ul>
-    <li><a id="activeMenuItem">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="claim.html">Claim</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</div>
-
-<div class="infosection">
-  <a name="about"></a>
-  <h2 class="aboutsection">Find Out More:</h2>
-
-
-  <button class="collapsible">
-    <h2>What We Do:</h2>
-  </button>
-
-<div class="info">
-  <div class="privateEventsInfo">
-    <h3 style="color:#0abab5" >
-      For private events:
-    </h3>
-    <p>
-      <b>If you are an individual or a company</b> who is organizing an event <b>such as:</b>
-
-      <ul>
-        <li>Wedding/bachelor/bachelorette party</li>
-        <li>Birthday </li>
-        <li>Holiday party</li>
-        <li>Company/bussiness meet and greet or office party</li>
-      </ul>
-
-    <p>Memory Captures will provide with a memory of the event for all the guests attending.<p>
-  </div>
-<div class="more">
-    <a class="buttonStyle" id="FindOutMore" href="about.html"> Find Out More</a><br><br><br>
-  <p>
-    <a class = "a01" href="#contact">Contact us</a> for a quote.
-  </p>
-</div>
-
-<div class="reestaurantsInfo">
-  <h3 style="color:#0abab5">
-    For Commercial Businesses and Restaurants:
-  </h3>
-
-      <p>We build oncoming clientelle through individualized physical and digital marketing.
-      <br><br>
-      <b>How?</b>
-      <br><br>
-      We offer a complimentary picture postcard to all your guests.
-      This postcard has a wallet size photo of the guest and is surrounded by your company's photographs and promotions.
-      <br><br>
-      Guests will keep this <b>FOR FREE</b> and this at no cost to your business.
-      <br><br>
-      Find out the benefits for you and how our business will develop.
-    </p>
-
-      <div class="more">
-        <a class="buttonStyle" id="FindOutMore" href="about.html"> Find Out More</a><br><br><br>
         <p>
-          <a class = "a01" href="#contact">Contact us</a> to
-          tell us your need, see how we could help you, and get a quote for our services.
+          A company created to capture the moment and provide memories of irreplaceable experiences
         </p>
       </div>
-</div>
-</div>
 
-  <br>
-  <a name="who"></a>
-  <br>
+      <div class="buttonsMenu">
 
-  <button class="collapsible">
-    <h2>Who We Are:</h2>
-  </button>
-  <div class="info">
-    <p>
-    We are a family company founded by a brother and a sister with 10 years
-    combined experience of taking snapshots of people during memorable moments
-    in their life whether at a restaurant or during life events. We
-    are commited to creating memorable experiences, and experts at treating
-    people in a respectful and professional manner.
+            <a class="buttonStyle cta grid_item" href="contact.html">
+              Book Us
+            </a>
+            <a class="buttonStyle noncta grid_item" href="claim.html"> 
+              Claim A Photo
+            </a>
+            <a class="buttonStyle noncta grid_item" href="about.html"> 
+              Find Out More
+            </a>
 
-  </p>
+      </div>
 
-  <br>
-  <h3>
-    We believe in this increasingly digital world, we should not loose touch with
-    the physical.
-  </h3>
-  <p>
-    That is why we put so much value in the person to person interactions that are
-    associated with each one of our products. We do not sell pictures, we provide people with
-    <b>memories of irreplaceable experiences.</b>
-
-  </p>
-</div>
-
-<a name="contact"></a>
-  <br>
-    <br>
-  <button class="collapsible">
-    <h2>Get in Touch:</h2>
-  </button>
-
-  <div class="info wrapper">
-    <div class="textinfo">
-      <p>
-        For more info or to book us for a private event
-        contact us at:
-        <br> <a class = "a01" href = "mailto:info@memorycaptures.com">info@memorycaptures.com</a>
-      </p>
-
-      <p class="a01", align="center">
-        702.606.0323 | 773.751.9536
-      </p>
     </div>
+  </section>
 
-    <div class="infoForm">
-
-      <p>Or drop us a line:</p>
-      <form class="contact" action="contact.php" method="POST" required>
-        <input class="shortInput" type="text" name="name" placeholder="Name" required><br>
-        <input class="shortInput" type="email" name="mail" placeholder="E-mail" required><br>
-        <br><br>
-
-        Subject:<br>
-        <input class="longInput" id="issueSubject" type="text" name="subject" value="Interest in working together" placeholder="Subject"><br>
-
-        Comment:<br>
-        <textarea class="longInput" id="issueComment"name="message" required></textarea><br><br>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-      </form>
-    </div>
-
-</div>
-
-</div>
-  <div class="footer">
-      <p>Memory Captures, LLC</p>
+  <div id="navMenu">
+    <ul>
+      <li><a id="activeMenuItem">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="claim.html">Claim</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
   </div>
 
-  <script type="text/javascript" src="javascript/index.js"></script>
-  </body>
+  <div class="infosection">
+    <a name="about"></a>
+    <h2 class="aboutsection">Find Out More:</h2>
+
+
+    <button class="collapsible">
+      <h2>What We Do:</h2>
+    </button>
+
+  <div class="info" id="info">
+    <div class="privateEventsInfo">
+      <h3 style="color:#0abab5" >
+        For private events:
+      </h3>
+      <p>
+        <b>If you are an individual or a company</b> who is organizing an event <b>such as:</b>
+
+        <ul>
+          <li>Wedding/bachelor/bachelorette party</li>
+          <li>Birthday </li>
+          <li>Holiday party</li>
+          <li>Company/bussiness meet and greet or office party</li>
+        </ul>
+
+      <p>Memory Captures will provide with a memory of the event for all the guests attending.<p>
+    </div>
+  <div class="more">
+      <a class="buttonStyle" id="FindOutMore" href="about.html"> Find Out More</a><br><br><br>
+    <p>
+      <a class = "a01" href="#contact">Contact us</a> for a quote.
+    </p>
+  </div>
+
+  <div class="reestaurantsInfo">
+    <h3 style="color:#0abab5">
+      For Commercial Businesses and Restaurants:
+    </h3>
+
+        <p>We build oncoming clientelle through individualized physical and digital marketing.
+        <br><br>
+        <b>How?</b>
+        <br><br>
+        We offer a complimentary picture postcard to all your guests.
+        This postcard has a wallet size photo of the guest and is surrounded by your company's photographs and promotions.
+        <br><br>
+        Guests will keep this <b>FOR FREE</b> and this at no cost to your business.
+        <br><br>
+        Find out the benefits for you and how our business will develop.
+      </p>
+
+        <div class="more">
+          <a class="buttonStyle" id="FindOutMore" href="about.html"> Find Out More</a><br><br><br>
+          <p>
+            <a class = "a01" href="#contact">Contact us</a> to
+            tell us your need, see how we could help you, and get a quote for our services.
+          </p>
+        </div>
+  </div>
+  </div>
+
+    <br>
+    <a name="who"></a>
+    <br>
+
+    <button class="collapsible">
+      <h2>Who We Are:</h2>
+    </button>
+    <div class="info">
+      <p>
+      We are a family company founded by a brother and a sister with 10 years
+      combined experience of taking snapshots of people during memorable moments
+      in their life whether at a restaurant or during life events. We
+      are commited to creating memorable experiences, and experts at treating
+      people in a respectful and professional manner.
+
+    </p>
+
+    <br>
+    <h3>
+      We believe in this increasingly digital world, we should not loose touch with
+      the physical.
+    </h3>
+    <p>
+      That is why we put so much value in the person to person interactions that are
+      associated with each one of our products. We do not sell pictures, we provide people with
+      <b>memories of irreplaceable experiences.</b>
+
+    </p>
+  </div>
+
+  <a name="contact"></a>
+    <br>
+      <br>
+    <button class="collapsible">
+      <h2>Get in Touch:</h2>
+    </button>
+
+    <div class="info wrapper">
+      <div class="textinfo">
+        <p>
+          For more info or to book us for a private event
+          contact us at:
+          <br> <a class = "a01" href = "mailto:info@memorycaptures.com">info@memorycaptures.com</a>
+        </p>
+
+        <p class="a01", align="center">
+          702.606.0323 | 773.751.9536
+        </p>
+      </div>
+
+      <div class="infoForm">
+
+        <p>Or drop us a line:</p>
+        <form class="contact" action="contact.php" method="POST" required>
+          <input class="shortInput" type="text" name="name" placeholder="Name" required><br>
+          <input class="shortInput" type="email" name="mail" placeholder="E-mail" required><br>
+          <br><br>
+
+          Subject:<br>
+          <input class="longInput" id="issueSubject" type="text" name="subject" value="Interest in working together" placeholder="Subject"><br>
+
+          Comment:<br>
+          <textarea class="longInput" id="issueComment"name="message" required></textarea><br><br>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </form>
+      </div>
+
+  </div>
+
+  </div>
+    <div class="footer">
+        <p>Memory Captures, LLC</p>
+    </div>
+
+    <script type="text/javascript" src="javascript/index.js"></script>
+</body>
 </html>
