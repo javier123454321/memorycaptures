@@ -21,16 +21,12 @@ p{
 .landing{
   height: 60vh;
   overflow: visible;
-  margin: auto;
-  margin-top: 40vh;
-  max-width: 500px;
-  min-width: 85%;
+  margin: 30vh 0 30vh 10vw;
+  max-width: 40vw;
   background-color: none;
   overflow: hidden;
-  align-items: flex-end;
-  
+  align-items: center;
 }
-
 
 .landing > .landingText{
   min-width: 10vw;
@@ -52,6 +48,14 @@ p{
   z-index: -1;
 }
 
+.bg-landing.two{
+  height: 65vw; 
+  width: 65vw;
+  top: 0vh;
+  left: 75vh;
+  background-color: rgb(92, 150, 144);
+  z-index: -2;
+}
 
 .buttonsMenu{
   margin: 35px auto;
@@ -301,16 +305,41 @@ hr {
 
 @media only screen and (max-device-width:1024px){
   h1{
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .infosection{
     font-size: 24px;
     height: 120vh; 
-}
-  .landingtext{
-    margin-bottom: 30%;
   }
+
+  .bg-landing{
+    height: 90vh;
+    width: 90vh;
+    top: -35vh;
+    left: -40vh;
+    z-index: -1;
+  }
+
+  .bg-landing.two{
+    height: 90vh;
+    width: 90vh;
+    top: 0vh;
+    left: 15vh;
+    background-color: rgb(92, 150, 144);
+    z-index: -2;
+  }
+
+  .landing > .landingText{
+    text-align: center;
+    max-width: 90%;
+    margin: 20vh auto 10vh auto;
+  }
+
+  .landing h1, .landing p {
+    text-align: center;
+  }
+
   div.landing{
     height: 80vh;
     overflow: visible;
@@ -349,4 +378,11 @@ hr {
   }
 
 
+}
+
+@media only screen and (min-device-width:3024px){
+  .landing > .landingText{
+    min-width: 10vw;
+    max-width: 40vw;
+  }
 }
