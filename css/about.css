@@ -34,7 +34,7 @@ body{
 }
 
 .infoWrapper{
-    padding: 60px 0;
+    padding: 0;
     background-color: lightgrey;
     margin-bottom: 0;
     text-align: center;
@@ -121,5 +121,13 @@ h3{
     padding: 10px 10px 20px 10px;
     max-width:100%;
     margin-top: 0px;
+    }
+
+    .aboutLanding{
+      max-width: none;
+      width: 100%;
+    }
+    #navMenu{
+      margin-top: 5vh;
     }
 }

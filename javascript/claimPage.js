@@ -1,10 +1,16 @@
 //Script finds the image based on pitcure ID and displays it along with a download button in the claimPage
     // Script by: Javier Gonzalez javier.e.glz@gmail.com
-
-
+function displayModal(ID){
+    document.getElementById(ID).style.display = "block";
+    console.log(`displaying ${document.getElementById(ID).classList}`)
+}
+function hideModal(ID){
+  document.getElementById(ID).style.display = "none";
+}
 function displayPictureModal(){
-    document.getElementById("reportIssueModal").style.display = "none";
-    document.getElementById("claimPhotoModal").style.display = "block";
+    hideModal("reportIssueModal");
+    displayModal("claimPhotoModal");
+
     let pictureID = document.getElementById("picID").value;
     setPicture(pictureID);
   };
@@ -81,8 +87,8 @@ function getPicture(url, displayHtml, errorHtml){
 
 
 function showReportIssueScreen(){
-  document.getElementById("claimPhotoModal").style.display = "none";
-  document.getElementById("reportIssueModal").style.display = "block";
+  hideModal("claimPhotoModal");
+  displayModal("reportIssueModal");
   };
 
 let showIssueForm = document.getElementById("reportIssueButton");
