@@ -1,6 +1,6 @@
 # THIS SITE IS DEPRECATED #
 
-I started this project and it was my first real forray into making something useful into Web Development. I didn't know what I was doing, but I learned A LOT from this experience. I have since abandoned this version, and started a new version which handles actual business logic, and is therefore **private**. (I love open source, but it does not make sense for this app which is highly specific to the company). This repo is a historical artifact that I look at sometimes to see how far I have come. 
+I started this project and it was my first real forray into making something useful in the Web. I didn't know what I was doing, but I learned A LOT from this experience. I have since abandoned this version, and started a new version which handles actual business logic, and is therefore **private**. (I love open source, but it does not make sense for this app which is highly specific to the company). This repo is a historical artifact that I look at sometimes to see how far I have come. 
 
 The current live version of the site written with Vue.js, and tied to a Laravel Backend:
 http://memorycaptures.com
@@ -20,7 +20,7 @@ http://memorycaptures.com
 
 ## About MemoryCaptures.
 
-The company model is simple, we take photographs of people, whether at an event or at a restaurant, then give them the option to buy the picture. This framed photograph includes a digital copy which they can claim online.
+The company model is simple, we take photographs of people, whether at an event or at a restaurant, then give them the option to buy the picture. This framed photograph includes a digital copy which they can claim online. This model paid for my college education, and is surprisingly profitable so long as you have enough of a good vibe to not make things awkward.
 
   How it works to claim a photograph, when a customer gets a picture taken:
 
